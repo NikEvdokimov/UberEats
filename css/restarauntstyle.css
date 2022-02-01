@@ -7,12 +7,11 @@
     box-sizing: border-box;
 }
 
-.wrapper-body{
+.wrapper_menu-body{
     width: 100%;
     overflow: hidden;
     height: 100%;
 }
-
 
 /* ----Header---- */
 
@@ -21,7 +20,6 @@
 }
 
 .nav_button{
-    box-sizing: border-box;
     padding: 10px 20px;
     border:1px solid #E0E0E0;
     background-color: #ffffff;
@@ -29,11 +27,11 @@
     font-size: 13px;
     font-weight: 500;
     line-height: 15px;
-
 }
 
 .nav_items{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,23 +39,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .container{
     max-width: 1124px;
     width: 100%;
-    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-left: 81px;
     padding-right: 81px;
-    
 }
 
 .header{
     padding:16px 0;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: #ffffff;
@@ -67,44 +61,40 @@
 /* --------------------main----------------- */
 
 main{
-    display:block;
-    width: 100%;
-/*     padding-top: 72px; */    
+    width: 100%;    
 }
-
-    
+ 
 /* ---------------------zastavka------------------- */
-.card_name{
+.zastavka_card_name{
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
     padding-bottom: 62px;
+    width: 100%;
 }
 
-.card_type{
+.zastavka_card_type{
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #626262;
+    width: 50%;
 }
 
-.card_time{
+.zastavka_card_time{
     font-size: 13px;
     font-weight: 400;
     line-height: 15px;
     color:white;
     border:1px solid black;
     border-radius: 16px;
-    box-sizing: border-box;
-    width: 102px;
+    width: 33%;
     background-color: black;
     padding:8px 16px ;
 }
 
-
 .zastavka_card{
     max-width: 390px;
-    width: 100%;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +102,6 @@ main{
     justify-content: space-between;
     padding: 38px;
 }
-
 
 .zastavka{
     background-image: url(../images/background.svg);
@@ -128,11 +117,12 @@ main{
     font-weight: 400;
     line-height: 19px;
     color: #626262;
-    padding-right: 40px;
 }
 
 .navbar_elements{
     display: flex;
+    justify-content: flex-start;
+    column-gap: 40px;
 }
 
 .navbar{
@@ -145,50 +135,51 @@ main{
 /* ---------------------------menu---------------------------------- */
 
 
-.card_dish{
+.menu_card_dish{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    width: 100%;
 }
 
-.card_description{
+.menu_card_description{
     font-size: 13px;
     font-weight: 400;
     line-height: 21px;
     color: #626262;
+    width: 100%;
 }
 
-.card_price{
+.menu_card_price{
     font-size: 15px;
     font-weight: 500;
     line-height: 21px;
+    width: 100%;
 }
 
-.card_text p{
+.menu_card_text p{
     padding-bottom: 4px;
 }
 
-.card img{
-    width: 170px;
-    height: 160px;
+.menu_card img{
+    width: auto;
+    height: 100%;
 }
 
-.card_text{
+.menu_card_text{
     padding: 16px 0 16px 16px;
-    background-color: #e2dfdf;
     display: flex;
     flex-direction:column;
     justify-content:space-between;
 }
 
-.card{
+.menu_card{
     background-color: #e2dfdf;
     display: flex;
     justify-content: space-between;
-
 }
 
-.wrapper{
+.wrapper_menu{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap:48px 16px ;
@@ -212,19 +203,18 @@ footer{
     width:100%;
     background-color: #2e2c2c ;
 }
+
 .section1{
     padding-top:56px;
     padding-bottom:40px;
     border-bottom: 1px solid #FFFFFF;
 }
 
-
 .select_language{
     color: white;
     font-size:13px ;
     font-weight: 500;
     line-height: 15px;
-    max-width:172px;
     width:100%;
     background-color: #3B3B3B ;
     border:none;
@@ -235,12 +225,11 @@ footer{
 }
 .language{
     background-color: #3B3B3B;
-    max-width:225px;
-    width: 100%;
+    max-width: 230px;
+    width: 60%;
     padding:12px 0 12px;
-    margin-bottom: 33px;
-    display: flex;
-    align-items: center;
+    margin-bottom: 5px;
+    display: inline-flex;
 }
 
 .sharp{
@@ -257,24 +246,23 @@ footer{
     line-height: 19px;
 }
 
-.icons{
-    padding-top: 20px;
-
-}
-
 .icons img{
     padding-right:12px;
 }
 
+.section2_col{
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+}
 
-.section2_col2 p, .section2_col3 p{
+.section2_col p{
     color:#FFFFFF;
     font-size: 13px;
     font-weight: 400;
     line-height: 15px;
-    padding-bottom: 23px;
+    width: 100%;
 }
-
 
 .section2{
     padding:32px 0 48px  ;
@@ -284,16 +272,12 @@ footer{
     gap:3em;
 }
 
-
 .section3{
     border-bottom: 1px solid #FFFFFF;
     padding:40px 0;
     display: flex;
     justify-content: center;
-}
-
-.section3 img{
-    padding: 0 20px;
+    column-gap: 40px;
 }
 
 .section4 p{
@@ -335,20 +319,11 @@ a{
 
 @media screen and (max-width: 991px){
     .container{
-        width: 100%;
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 8px;
         padding-right: 8px;
     }
 
-    .card img{
-        width: 200px;
-        height: 160px;
-    }
-
-    .wrapper{
+    .wrapper_menu{
         grid-template-columns: 1fr;
         gap: 32px;
     }
@@ -356,22 +331,25 @@ a{
 
 
 @media  screen and (max-width: 767px){
-    .card_name{
+    .zastavka_card_name{
         font-size: 23px;
         padding-bottom: 35px;
     }
     
-    .card_type{
+    .zastavka_card_type{
         padding-bottom: 25px;
+        width: 60%;
+    }
+
+    .zastavka_card_time{
+        width: 50%;
     }
     .zastavka_card{
         max-width: 300px;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
         padding: 15px 45px;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
     }
 
     .zastavka{
@@ -380,16 +358,14 @@ a{
     }
 
     .navbar_elements{
+        padding-left: 30px;
         display: flex;
         flex-wrap: wrap;
         row-gap: 10px;
     }
 
     .navbar_elem{
-        box-sizing: border-box;
-        padding-left: 30px;
-        padding-right: 0;
-        width:50%;
+        width:45%;
     }
 
     .container h3{
@@ -397,45 +373,59 @@ a{
     }
 
     .section2,.section4{
-    display: grid;
-    grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .container{
-        width: 100%;
-        box-sizing: border-box;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 4px;
         padding-right: 4px;
-        }
+    }
 }
 
 
-@media screen and (max-width:575px){
+@media screen and (max-width:438px){
+
+    .navbar{
+        display: none;
+    }
+
+    /* .navbar_elements{
+        padding-left:4px;
+    }
     
-    .wrapper{
+    .navbar_elem{
+        width:40%;
+    } */
+    
+    .wrapper_menu{
         display: grid;
         grid-template-columns: 1fr;
         gap:0px;
     }
-    .card{
+
+    .menu_card{
         border-bottom: 1px solid rgba(117, 117, 117, 0.2) ;
         min-width: 0;
+        background-color: white;
     }
-    .card img{
+    .menu_card img{
         padding-top: 8px;
         width: 102px;
         height: 100%;
     }
 
-    .card_text{
+    .menu_card_text{
         width: 60%;
-        padding: 4px 0 4px 4px;
+        padding: 8px 0 4px 4px;
     }
-    .card_dish{
+    
+    .menu_card_dish{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    
 }
+ 
