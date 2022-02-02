@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.wrapper_menu-body{
+.wrapper_body{
     width: 100%;
     overflow: hidden;
     height: 100%;
@@ -162,7 +162,6 @@ main{
 }
 
 .menu_card img{
-    width: auto;
     height: 100%;
 }
 
@@ -426,6 +425,5 @@ a{
         text-overflow: ellipsis;
     }
 
-    
 }
  
